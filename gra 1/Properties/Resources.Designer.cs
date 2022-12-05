@@ -63,6 +63,26 @@ namespace gra_1.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _4oprêmio_bloxy_anual {
+            get {
+                object obj = ResourceManager.GetObject("4oprêmio-bloxy-anual", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _5e5ba12c9e1837a9171a75e1ec638c8e {
+            get {
+                object obj = ResourceManager.GetObject("5e5ba12c9e1837a9171a75e1ec638c8e", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gra_safari {
             get {
                 object obj = ResourceManager.GetObject("gra safari", resourceCulture);
