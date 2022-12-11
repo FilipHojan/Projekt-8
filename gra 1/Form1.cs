@@ -22,10 +22,7 @@ namespace gra_1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Form5 f5 = new Form5();
-            f5.Show();
-            Form6 f6 = new Form6();
-            f6.Show();
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -34,6 +31,32 @@ namespace gra_1
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+            if((comboBox1.SelectedItem == null && comboBox2.SelectedItem == null) || comboBox1.SelectedItem == null || comboBox2.SelectedItem == null)
+            {
+                MessageBox.Show("ERROR :( \n Brak wybranej opcji");
+            }
+            else
+            {
+                if(comboBox1.SelectedIndex == 0)
+                {
+                    Form2 f2 = new Form2();
+                    f2.Show();
+                }
+                else if(comboBox1.SelectedIndex == 1)
+                {
+                    Form3 f3 = new Form3();
+                    f3.Show();
+                }
+                else if(comboBox1.SelectedIndex == 2)
+                {
+                    Form4 f4 = new Form4();
+                    f4.Show();
+                }
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
