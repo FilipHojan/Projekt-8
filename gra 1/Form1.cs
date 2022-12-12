@@ -12,6 +12,12 @@ namespace gra_1
 {
     public partial class Form1 : Form
     {
+
+        public static class Zwierze
+        {
+            public static int zwierze = 0;
+        }
+
         public Form1()
         {
             InitializeComponent();
@@ -38,7 +44,7 @@ namespace gra_1
             }
             else
             {
-                if(comboBox1.SelectedIndex == 0)
+                if (comboBox1.SelectedIndex == 0)
                 {
                     Form2 f2 = new Form2();
                     f2.Show();
@@ -59,6 +65,20 @@ namespace gra_1
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox2.SelectedIndex == 4)
+            {
+                MessageBoxButtons button = MessageBoxButtons.OK;
+                DialogResult result = MessageBox.Show("    UWAGA!!!! \n WYbrałeś krokodyla");
+                Zwierze.zwierze = comboBox2.SelectedIndex;
+            }
+            else
+            {
+                Zwierze.zwierze = comboBox2.SelectedIndex;
+            }
         }
     }
 }
