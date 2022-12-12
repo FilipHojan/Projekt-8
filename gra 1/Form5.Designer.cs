@@ -42,16 +42,18 @@ namespace gra_1
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::gra_1.Properties.Resources._4oprêmio_bloxy_anual;
-            this.ClientSize = new System.Drawing.Size(213, 165);
+            this.ClientSize = new System.Drawing.Size(235, 179);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form5";
             this.Text = "Form5";
+            this.Load += new System.EventHandler(this.Form5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

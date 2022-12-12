@@ -34,7 +34,7 @@ namespace gra_1
         {
             if((comboBox1.SelectedItem == null && comboBox2.SelectedItem == null) || comboBox1.SelectedItem == null || comboBox2.SelectedItem == null)
             {
-                MessageBox.Show("ERROR :( \n Brak wybranej opcji");
+                MessageBox.Show("\t ERROR :( \n Brak wybranej opcji");
             }
             else
             {

@@ -42,6 +42,7 @@ namespace gra_1
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form6
             // 
@@ -52,6 +53,7 @@ namespace gra_1
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form6";
             this.Text = "Form6";
+            this.Load += new System.EventHandler(this.Form6_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
