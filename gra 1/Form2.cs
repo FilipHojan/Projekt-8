@@ -15,6 +15,12 @@ namespace gra_1
     {
         Random random = new Random();
 
+        bool gameOver = false;
+        string trafienie;
+        
+        List<PictureBox> zdj = new List<PictureBox>();
+        PictureBox zdjA;
+
         List<string> icons = new List<string>()
         {
             "W",
@@ -25,6 +31,7 @@ namespace gra_1
         public Form2()
         {
             InitializeComponent();
+            LoadPicture();
         }
 
         int czas = 3;
@@ -45,5 +52,7 @@ namespace gra_1
         {
             if()
         }
+        
+
     }
 }
